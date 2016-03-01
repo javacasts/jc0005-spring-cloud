@@ -1,0 +1,10 @@
+server:
+  port: 8080
+eureka:
+  client:
+    fetchRegistry: true
+    registerWithEureka: false
+    serviceUrl:
+      defaultZone: http://localhost:8085/eureka/
+zuul:
+  ignoredServices: proxy

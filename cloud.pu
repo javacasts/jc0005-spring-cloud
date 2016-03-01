@@ -1,0 +1,28 @@
+@startuml
+
+node "Reverse Proxy" as proxy
+node "Configuration" as config
+
+cloud "Services" {
+  node "Service" as service1
+  node "Service" as service2
+  node "Service" as service3
+}
+
+node "Service-Lookup" as lookup
+
+proxy    --> service1
+proxy    --> service2
+proxy    --> service3
+service2 --> service3
+
+service1 --> config
+service2 --> config
+service3 --> config
+
+proxy    --> lookup
+service1 --> lookup
+service2 --> lookup
+service3 --> lookup
+
+@enduml

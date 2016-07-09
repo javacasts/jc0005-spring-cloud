@@ -62,8 +62,8 @@ Now it's time to use the configuration-service. I've already introduced
 the configuration for the service named `hello`.
 
 It's a pretty simple spring-boot-service (see
-[javacasts episode 1](http://javacasts.net/video/iZyx3rbTDRQ) on spring
-boot), it will only return a simple string.
+[javacasts episode 1](http://www.javacasts.net/spring/boot/2016/01/06/jc0001-spring-boot.html)
+on spring boot), it will only return a simple string.
 
 ```java
 @RestController
